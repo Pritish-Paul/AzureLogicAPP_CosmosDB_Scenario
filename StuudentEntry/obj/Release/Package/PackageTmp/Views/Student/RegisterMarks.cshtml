@@ -1,0 +1,55 @@
+﻿
+<h2>Register</h2>
+
+<div class="jumbotron">
+    <strong>Register Marks</strong>
+</div>
+
+<tr class="form-group">
+    @using (Html.BeginForm())
+    {
+        <table align="center">
+            <tr>
+                <td align="center">
+                    @Html.Label("Id:")
+                    @Html.TextBox("Id")
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    @Html.Label("Marks 1:")
+                    @Html.TextBox("marks1")
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    @Html.Label("Marks 2:")
+                    @Html.TextBox("marks2")
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    @Html.Label("Marks 3:")
+                    @Html.TextBox("marks3")
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Submit" class="btn-primary" />
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+
+                    @ViewBag.SucessMessage
+                </td>
+            </tr>
+
+        </table>
+
+
+
+    }

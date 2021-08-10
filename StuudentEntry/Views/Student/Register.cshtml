@@ -1,0 +1,54 @@
+﻿
+<h2>Register</h2>
+
+<div class="jumbotron">
+    <strong>Register As Student</strong>
+</div>
+
+<tr class="form-group">
+    @using (Html.BeginForm())
+    {
+    <table align="center">
+        <tr>
+            <td align="center">
+                @Html.Label("Employee ID:")
+                @Html.TextBox("Id")
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                @Html.Label("Employee Name:")
+                @Html.TextBox("Name")
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                @Html.Label("Employee Status:")
+                @Html.TextBox("Status")
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <input type="submit" value="Submit" class="btn-primary" />
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+
+                @ViewBag.SucessMessage
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+               @Html.ActionLink("Register Student Marks","RegisterMarks")
+            </td>
+        </tr>
+    </table>
+
+
+
+    }
